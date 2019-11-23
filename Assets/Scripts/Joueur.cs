@@ -31,6 +31,8 @@ public class Joueur : MonoBehaviour
         vitesseDesiree -= coefDecroissancePassive * Time.deltaTime * vitesseDesiree;
         vitesseActuelle += (vitesseDesiree - vitesseActuelle) * coefReactivite * Time.deltaTime;
 
+        peur -= 5 * Time.deltaTime;
+
         // Si le perso va trop lentement, il s'arrête
         if(vitesseActuelle < seuilVitesseArret){
             vitesseActuelle = 0;
@@ -42,7 +44,16 @@ public class Joueur : MonoBehaviour
             vitesseActuelle = vitesseMax;
         }
 
-        Deplacement();   
+        Deplacement();
+
+        if(peur >= 100){
+            // Game Over
+        }
+        if(peur < 0){
+            peur = 0;
+        }
+
+
     }
 
     public void Deplacement(){

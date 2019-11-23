@@ -7,6 +7,9 @@ public class Joueur : MonoBehaviour
     [SerializeField] GameObject elementPrefab;
     public SpriteRenderer sprite;
     public Rigidbody2D body;
+
+    [SerializeField]
+    [Range(0, 100)]
     public float peur = 50;
     public float vitesseActuelle = 4;
     public float vitesseDesiree;

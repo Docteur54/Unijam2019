@@ -9,11 +9,13 @@ public class SubElement : MonoBehaviour
     public GameObject joueur;
     public float peur = 0f;
     public float vitesse = 0f;
+    public AudioSource sound;
 
 
     // Start is called before the first frame update
     void Start()
     {
+        sound.Play();
         if (instacie)
         {
             Instantiate(piege, new Vector3(transform.position.x,0), transform.rotation);

@@ -7,6 +7,7 @@ public class Piege : MonoBehaviour
 
     public float peur;
     public float vitesseSortie;
+    public AudioSource sound;
 
     private bool actif = true;
 
@@ -40,6 +41,7 @@ public class Piege : MonoBehaviour
     {
         if(actif){
             other.GetComponent<Joueur>().UtilisationPiege(vitesseSortie, peur);
+            sound.Play();
         }
         
     }

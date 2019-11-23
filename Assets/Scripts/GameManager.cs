@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
-    public PulseManager pulseManager;
-
+    public UIManager uIManager;
+    public Joueur joueur;
 
     // Start is called before the first frame update
     void Start()
@@ -16,8 +16,6 @@ public class UIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            
+        uIManager.pulseManager.stresse = joueur.peur / 100;
     }
-
-
 }

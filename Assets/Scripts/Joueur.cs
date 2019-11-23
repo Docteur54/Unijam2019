@@ -29,12 +29,14 @@ public class Joueur : MonoBehaviour
     {
         // Faire décroitre la vitesse au fil du temps
         vitesseDesiree -= coefDecroissancePassive * Time.deltaTime * vitesseDesiree;
+        if (vitesseDesiree < 0.5) vitesseDesiree = 0;
         vitesseActuelle += (vitesseDesiree - vitesseActuelle) * coefReactivite * Time.deltaTime;
+        Debug.Log(vitesseActuelle);
 
         peur -= 5 * Time.deltaTime;
 
         // Si le perso va trop lentement, il s'arrête
-        if(vitesseActuelle < seuilVitesseArret){
+        if(vitesseActuelle < 0){
             vitesseActuelle = 0;
             // Game Over
         }
@@ -53,7 +55,7 @@ public class Joueur : MonoBehaviour
             peur = 0;
         }
 
-
+        Debug.Log(vitesseActuelle);
     }
 
     public void Deplacement(){
@@ -68,7 +70,7 @@ public class Joueur : MonoBehaviour
     public void UtilisationElement(float variationVitesse, float variationPeur, float xObjetBrisable){ 
         peur += variationPeur;
         //vitesseDesiree += variationVitesse;
-        
+        //Debug.Log(variationVitesse);
         // Tester si la position de l'objet est devant ou derrière le perso
         // Si l'objet est devant, on ralenti le perso
         if(xObjetBrisable > transform.position.x){
@@ -80,7 +82,8 @@ public class Joueur : MonoBehaviour
 
     // Lorsque le personnage prend un piège
     public void UtilisationPiege(float variationVitesse, float variationPeur){
-        vitesseDesiree = variationVitesse;
+        vitesseDesiree -= variationVitesse;
+        vitesseActuelle = vitesseDesiree;
         peur += variationPeur;
     }
 

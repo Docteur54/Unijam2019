@@ -6,7 +6,6 @@ public class SubElement : MonoBehaviour
 {
     public bool instacie;
     public GameObject piege;
-    public GameObject joueur;
     public float peur = 0f;
     public float vitesse = 0f;
 
@@ -18,6 +17,8 @@ public class SubElement : MonoBehaviour
         {
             Instantiate(piege, new Vector3(transform.position.x,0), transform.rotation);
         }
+        Debug.Log("ok");
+        GameObject joueur = GameObject.Find("personnage");
         joueur.GetComponent<Joueur>().UtilisationElement(vitesse, peur, transform.position.x);
     }
 

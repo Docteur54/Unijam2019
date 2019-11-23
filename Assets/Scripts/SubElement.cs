@@ -19,7 +19,7 @@ public class SubElement : MonoBehaviour
         {
             Instantiate(piege, new Vector3(transform.position.x,0,0), transform.rotation);
         }
-        joueur = GameObject.Find("personnage");
+        GameObject joueur = GameObject.Find("personnage");
 
         joueur.GetComponent<Joueur>().UtilisationElement(vitesse, peur, transform.position.x);
         sound.Play();

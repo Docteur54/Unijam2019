@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,8 +18,9 @@ public class SubElement : MonoBehaviour
         sound.Play();
         if (instacie)
         {
-            Instantiate(piege, new Vector3(transform.position.x,0), transform.rotation);
+            Instantiate(piege, new Vector3(transform.position.x,0,0), transform.rotation);
         }
+        joueur = GameObject.Find("personnage");
         joueur.GetComponent<Joueur>().UtilisationElement(vitesse, peur, transform.position.x);
     }
 

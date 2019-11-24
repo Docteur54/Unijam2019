@@ -172,9 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instacie: 1
   piege: {fileID: 6411268104382071225, guid: d6d4ea4f900496e468db72b2f543611d, type: 3}
-  joueur: {fileID: 0}
   peur: 25
-  vitesse: 3
+  vitesse: 5
   sound: {fileID: 7301794207623212934}
 --- !u!82 &7301794207623212934
 AudioSource:
@@ -388,7 +387,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instacie: 0
   piege: {fileID: 0}
-  joueur: {fileID: 0}
   peur: 0
   vitesse: 0
   sound: {fileID: 0}

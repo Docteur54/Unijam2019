@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   peur: 20
-  vitesseSortie: 2
+  variationVitesse: 0
   sound: {fileID: 6411268104382071238}
 --- !u!61 &6411268104382071239
 BoxCollider2D:
@@ -60,7 +60,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.02427125, y: -0.0008404255}

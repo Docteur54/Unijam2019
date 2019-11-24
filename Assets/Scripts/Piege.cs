@@ -6,7 +6,7 @@ public class Piege : MonoBehaviour
 {
 
     public float peur;
-    public float vitesseSortie;
+    public float variationVitesse;
     public AudioSource sound;
 
     private bool actif = true;
@@ -40,8 +40,9 @@ public class Piege : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if(actif){
-            other.GetComponent<Joueur>().UtilisationPiege(vitesseSortie, peur);
+            other.GetComponent<Joueur>().UtilisationPiege(variationVitesse, peur);
             sound.Play();
+            actif = false;
         }
         
     }

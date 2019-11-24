@@ -99,7 +99,7 @@ MonoBehaviour:
   instacie: 0
   piege: {fileID: 0}
   peur: -20
-  vitesse: -3
+  vitesse: -4
   sound: {fileID: 5145115306756137485}
 --- !u!95 &1466874882751546919
 Animator:
@@ -434,7 +434,7 @@ MonoBehaviour:
   instacie: 0
   piege: {fileID: 0}
   peur: 20
-  vitesse: 1
+  vitesse: 2
   sound: {fileID: 4468525856979780792}
 --- !u!82 &4468525856979780792
 AudioSource:

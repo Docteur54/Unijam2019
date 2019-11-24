@@ -100,7 +100,7 @@ public class Joueur : MonoBehaviour
 
     private void LateUpdate()
     {
-        //animator.SetBool("Trebuche", false);
+        animator.SetBool("Trebuche", false);
         animator.SetBool("Surprise", false);
     }
 

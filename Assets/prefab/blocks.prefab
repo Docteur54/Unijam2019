@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   peur: 15
-  vitesseSortie: 2
+  variationVitesse: 2
   sound: {fileID: 7550116603799201869}
 --- !u!61 &7550116603799201868
 BoxCollider2D:

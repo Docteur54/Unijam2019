@@ -1083,6 +1083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uIManager: {fileID: 1903922006}
   joueur: {fileID: 614643800}
+  monstre: {fileID: 0}
 --- !u!4 &1133863599
 Transform:
   m_ObjectHideFlags: 0

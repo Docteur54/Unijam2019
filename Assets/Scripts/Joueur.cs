@@ -8,6 +8,8 @@ public class Joueur : MonoBehaviour
     public SpriteRenderer sprite;
     public Rigidbody2D body;
 
+    Animator animator;
+
     [SerializeField]
     [Range(0, 100)]
     public float peur = 50;
@@ -22,6 +24,7 @@ public class Joueur : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,12 +34,12 @@ public class Joueur : MonoBehaviour
         vitesseDesiree -= coefDecroissancePassive * Time.deltaTime * vitesseDesiree;
         if (vitesseDesiree < 0.5) vitesseDesiree = 0;
         vitesseActuelle += (vitesseDesiree - vitesseActuelle) * coefReactivite * Time.deltaTime;
-        Debug.Log(vitesseActuelle);
+        //Debug.Log(vitesseActuelle);
 
         peur -= 5 * Time.deltaTime;
 
         // Si le perso va trop lentement, il s'arrête
-        if(vitesseActuelle < 0){
+        if(vitesseActuelle < 0.4 && vitesseDesiree < vitesseActuelle){
             vitesseActuelle = 0;
             // Game Over
         }
@@ -55,7 +58,12 @@ public class Joueur : MonoBehaviour
             peur = 0;
         }
 
-        Debug.Log(vitesseActuelle);
+        animator.SetFloat("Speed", vitesseActuelle);
+        if (vitesseActuelle > 4) animator.speed = (vitesseActuelle - 4) / 4 + 1;
+        else if (vitesseActuelle > 0.3) animator.speed = (vitesseActuelle - 0.4f) / 6.6f + 0.5f;
+        else animator.speed = 1;
+
+       // Debug.Log(vitesseActuelle);
     }
 
     public void Deplacement(){
@@ -69,11 +77,12 @@ public class Joueur : MonoBehaviour
     // Lorsque le joueur utilise un élément
     public void UtilisationElement(float variationVitesse, float variationPeur, float xObjetBrisable){ 
         peur += variationPeur;
+        animator.SetBool("Surprise", true);
         //vitesseDesiree += variationVitesse;
         //Debug.Log(variationVitesse);
         // Tester si la position de l'objet est devant ou derrière le perso
         // Si l'objet est devant, on ralenti le perso
-        if(xObjetBrisable > transform.position.x){
+        if (xObjetBrisable > transform.position.x){
             vitesseDesiree -= variationVitesse;
         }else{ // Si l'objet est derrière ou sur le perso, on accélère le perso
             vitesseDesiree += variationVitesse;
@@ -82,9 +91,17 @@ public class Joueur : MonoBehaviour
 
     // Lorsque le personnage prend un piège
     public void UtilisationPiege(float variationVitesse, float variationPeur){
+        animator.SetBool("Trebuche",true);
+        Debug.Log("lol");
         vitesseDesiree -= variationVitesse;
         vitesseActuelle = vitesseDesiree;
         peur += variationPeur;
+    }
+
+    private void LateUpdate()
+    {
+        //animator.SetBool("Trebuche", false);
+        animator.SetBool("Surprise", false);
     }
 
 }

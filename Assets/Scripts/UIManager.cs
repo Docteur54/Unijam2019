@@ -17,6 +17,7 @@ public class UIManager : MonoBehaviour
         btnPause.gameObject.SetActive(false);
         pauseMenu.SetActive(false);
         gameOverMenu.SetActive(false);
+        startMenu.SetActive(true);
     }
 
     // Update is called once per frame

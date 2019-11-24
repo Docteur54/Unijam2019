@@ -2149,7 +2149,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e402cffe626e03c40b3b2ab405eab808, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -2428,7 +2428,6 @@ MonoBehaviour:
   uIManager: {fileID: 1308760531}
   joueur: {fileID: 1531355487}
   monstre: {fileID: 0}
-  GameState: 
 --- !u!1 &1857382278
 GameObject:
   m_ObjectHideFlags: 0

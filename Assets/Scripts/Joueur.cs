@@ -7,6 +7,7 @@ public class Joueur : MonoBehaviour
     [SerializeField] GameObject elementPrefab;
     public SpriteRenderer sprite;
     public Rigidbody2D body;
+    public Monstre monstre;
 
     Animator animator;
 
@@ -30,6 +31,7 @@ public class Joueur : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         // Faire décroitre la vitesse au fil du temps
         vitesseDesiree -= coefDecroissancePassive * Time.deltaTime * vitesseDesiree;
         if (vitesseDesiree < 0.5) vitesseDesiree = 0;
@@ -41,7 +43,9 @@ public class Joueur : MonoBehaviour
         // Si le perso va trop lentement, il s'arrête
         if(vitesseActuelle < 0.4 && vitesseDesiree < vitesseActuelle){
             vitesseActuelle = 0;
-            // Game Over
+            monstre.transform.SetPositionAndRotation(new Vector3(transform.position.x - 10, 0, -2), Quaternion.identity);
+            monstre.Vitesse = 7;
+            print("monstre arrive ! " + monstre.Vitesse);
         }
 
         // Pour éviter que le perso puisse accélérer à l'infini

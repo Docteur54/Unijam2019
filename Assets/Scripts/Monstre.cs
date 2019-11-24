@@ -5,7 +5,7 @@ using UnityEngine;
 public class Monstre : MonoBehaviour
 {
     public int Vitesse;
-    public GameManager GameManager;
+    public UIManager UI;
 
     // Start is called before the first frame update
     void Start()
@@ -21,5 +21,6 @@ public class Monstre : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        UI.GameOver();
     }
 }

@@ -1975,7 +1975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &783886509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2870,6 +2870,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9131261378340730933, guid: 33c5c7594320ddf488c07e0cf2d1372b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9131261378848977232, guid: 33c5c7594320ddf488c07e0cf2d1372b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2923,11 +2928,6 @@ PrefabInstance:
     - target: {fileID: 9131261378848977232, guid: 33c5c7594320ddf488c07e0cf2d1372b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9131261378340730933, guid: 33c5c7594320ddf488c07e0cf2d1372b,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9131261379399791052, guid: 33c5c7594320ddf488c07e0cf2d1372b,
@@ -3300,7 +3300,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.121818, y: 5.162607}
+    oldSize: {x: 3.39, y: 5.07}
     newSize: {x: 2.121818, y: 5.162607}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: e1d1fdb58c625ab46acd8a3196ab8c66
+guid: 485a336f56e91ec4eb6c8d6e4db06231
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8088231564328284161
-    second: Course_sprite_sheet_0
+      213: -9146174846835967190
+    second: "Sprite sheet course affin\xE9_0"
   - first:
-      213: 4581613893878971306
-    second: Course_sprite_sheet_1
+      213: 7841199910986060297
+    second: "Sprite sheet course affin\xE9_1"
   - first:
-      213: -7460663636418572359
-    second: Course_sprite_sheet_2
+      213: 7636215580838827008
+    second: "Sprite sheet course affin\xE9_2"
   - first:
-      213: 7398472355364804836
-    second: Course_sprite_sheet_3
+      213: -7357543191984147958
+    second: "Sprite sheet course affin\xE9_3"
   - first:
-      213: -3529650813217155441
-    second: Course_sprite_sheet_4
+      213: 4218905133060310533
+    second: "Sprite sheet course affin\xE9_4"
   - first:
-      213: 7492035140234742709
-    second: Course_sprite_sheet_5
+      213: 5104930027401153432
+    second: "Sprite sheet course affin\xE9_5"
   - first:
-      213: -3924553285360355048
-    second: Course_sprite_sheet_6
+      213: -8276382612175544360
+    second: "Sprite sheet course affin\xE9_6"
   - first:
-      213: -3731714322718212413
-    second: Course_sprite_sheet_7
+      213: 8970282049579392630
+    second: "Sprite sheet course affin\xE9_7"
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -122,12 +122,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Course_sprite_sheet_0
+      name: "Sprite sheet course affin\xE9_0"
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 414
+        width: 415
         height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -136,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aace95ccb3f15a4ca7e16a1b39eda35
-      internalID: -8088231564328284161
+      spriteID: 48c4740505d422b478dc2e672b45ce5d
+      internalID: -9146174846835967190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_1
+      name: "Sprite sheet course affin\xE9_1"
       rect:
         serializedVersion: 2
-        x: 476
+        x: 415
         y: 0
-        width: 314
+        width: 415
         height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -157,20 +157,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd9d66874853a63488a2446600381ae2
-      internalID: 4581613893878971306
+      spriteID: 3b8c8029e2385e64cb2dd6fbef407e12
+      internalID: 7841199910986060297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_2
+      name: "Sprite sheet course affin\xE9_2"
       rect:
         serializedVersion: 2
-        x: 967
-        y: 4
-        width: 198
-        height: 443
+        x: 830
+        y: 0
+        width: 415
+        height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a5cf6a55e2c85458c0180a51d9b76d
-      internalID: -7460663636418572359
+      spriteID: 5d4e0a9ea295222498f7e5bc5a485525
+      internalID: 7636215580838827008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_3
+      name: "Sprite sheet course affin\xE9_3"
       rect:
         serializedVersion: 2
-        x: 1337
-        y: 4
-        width: 267
-        height: 477
+        x: 1245
+        y: 0
+        width: 415
+        height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,19 +199,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2fb653ea0d6ee4a448038eba2e59e44a
-      internalID: 7398472355364804836
+      spriteID: 2637d7051d4a1b348b5e058a7e1bb754
+      internalID: -7357543191984147958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_4
+      name: "Sprite sheet course affin\xE9_4"
       rect:
         serializedVersion: 2
         x: 1660
         y: 0
-        width: 414
+        width: 415
         height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -220,19 +220,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0ce02dfed32b044abee1af53fb9eaef
-      internalID: -3529650813217155441
+      spriteID: fcc44a9467ab51b45af6e7a77a5b1cba
+      internalID: 4218905133060310533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_5
+      name: "Sprite sheet course affin\xE9_5"
       rect:
         serializedVersion: 2
-        x: 2136
+        x: 2075
         y: 0
-        width: 314
+        width: 415
         height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -241,20 +241,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc49ac29a2eb6ff4ebb5c10e5be14748
-      internalID: 7492035140234742709
+      spriteID: ed375d9e4f69dd54d9a81e2a7606479f
+      internalID: 5104930027401153432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_6
+      name: "Sprite sheet course affin\xE9_6"
       rect:
         serializedVersion: 2
-        x: 2627
-        y: 4
-        width: 198
-        height: 443
+        x: 2490
+        y: 0
+        width: 415
+        height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,20 +262,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d865fd42e8d9cbf4a8b1afc4dce292a5
-      internalID: -3924553285360355048
+      spriteID: 1b82fef94cf2efc48a309a9d44de18d9
+      internalID: -8276382612175544360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_7
+      name: "Sprite sheet course affin\xE9_7"
       rect:
         serializedVersion: 2
-        x: 2997
-        y: 4
-        width: 323
-        height: 477
+        x: 2905
+        y: 0
+        width: 415
+        height: 487
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -283,8 +283,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b97876fc7d59474d985ba47876d6b21
-      internalID: -3731714322718212413
+      spriteID: e61a94471d5d84544bca9d2ab0af7dd9
+      internalID: 8970282049579392630
       vertices: []
       indices: 
       edges: []

@@ -1,37 +1,28 @@
 fileFormatVersion: 2
-guid: e1d1fdb58c625ab46acd8a3196ab8c66
+guid: dc8ceb2e5861f0b40a38158df423db87
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8088231564328284161
-    second: Course_sprite_sheet_0
+      213: 4180006253383292681
+    second: MONSTREDELAMORT_0
   - first:
-      213: 4581613893878971306
-    second: Course_sprite_sheet_1
+      213: -2945299570344827148
+    second: MONSTREDELAMORT_1
   - first:
-      213: -7460663636418572359
-    second: Course_sprite_sheet_2
+      213: 8609684383823030806
+    second: MONSTREDELAMORT_2
   - first:
-      213: 7398472355364804836
-    second: Course_sprite_sheet_3
+      213: 8518185785646648259
+    second: MONSTREDELAMORT_3
   - first:
-      213: -3529650813217155441
-    second: Course_sprite_sheet_4
-  - first:
-      213: 7492035140234742709
-    second: Course_sprite_sheet_5
-  - first:
-      213: -3924553285360355048
-    second: Course_sprite_sheet_6
-  - first:
-      213: -3731714322718212413
-    second: Course_sprite_sheet_7
+      213: -5306055805315145866
+    second: MONSTREDELAMORT_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
-    sRGBTexture: 1
+    enableMipMap: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -71,9 +62,9 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -122,169 +113,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Course_sprite_sheet_0
+      name: MONSTREDELAMORT_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 414
-        height: 487
+        width: 2347
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6aace95ccb3f15a4ca7e16a1b39eda35
-      internalID: -8088231564328284161
+      spriteID: f6caa0c37e9256442b1e09acb88dad8a
+      internalID: 4180006253383292681
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_1
+      name: MONSTREDELAMORT_1
       rect:
         serializedVersion: 2
-        x: 476
+        x: 2394
         y: 0
-        width: 314
-        height: 487
+        width: 2354
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd9d66874853a63488a2446600381ae2
-      internalID: 4581613893878971306
+      spriteID: 7382e0db2d5bb59488ccc653e7fde86f
+      internalID: -2945299570344827148
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_2
+      name: MONSTREDELAMORT_2
       rect:
         serializedVersion: 2
-        x: 967
-        y: 4
-        width: 198
-        height: 443
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 53a5cf6a55e2c85458c0180a51d9b76d
-      internalID: -7460663636418572359
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Course_sprite_sheet_3
-      rect:
-        serializedVersion: 2
-        x: 1337
-        y: 4
-        width: 267
-        height: 477
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fb653ea0d6ee4a448038eba2e59e44a
-      internalID: 7398472355364804836
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Course_sprite_sheet_4
-      rect:
-        serializedVersion: 2
-        x: 1660
+        x: 4788
         y: 0
-        width: 414
-        height: 487
+        width: 2349
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0ce02dfed32b044abee1af53fb9eaef
-      internalID: -3529650813217155441
+      spriteID: cbed284c018c45c4c9dd461132d2c27e
+      internalID: 8609684383823030806
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_5
+      name: MONSTREDELAMORT_3
       rect:
         serializedVersion: 2
-        x: 2136
+        x: 7182
         y: 0
-        width: 314
-        height: 487
+        width: 2343
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc49ac29a2eb6ff4ebb5c10e5be14748
-      internalID: 7492035140234742709
+      spriteID: c4e9ec404eb8cd8498bc662d31721576
+      internalID: 8518185785646648259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Course_sprite_sheet_6
+      name: MONSTREDELAMORT_4
       rect:
         serializedVersion: 2
-        x: 2627
-        y: 4
-        width: 198
-        height: 443
+        x: 9576
+        y: 0
+        width: 2394
+        height: 1080
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d865fd42e8d9cbf4a8b1afc4dce292a5
-      internalID: -3924553285360355048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Course_sprite_sheet_7
-      rect:
-        serializedVersion: 2
-        x: 2997
-        y: 4
-        width: 323
-        height: 477
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b97876fc7d59474d985ba47876d6b21
-      internalID: -3731714322718212413
+      spriteID: ff9e0cdc5ef9da244b0bceaed7bb5ddf
+      internalID: -5306055805315145866
       vertices: []
       indices: 
       edges: []

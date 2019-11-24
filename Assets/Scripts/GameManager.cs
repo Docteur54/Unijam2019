@@ -17,5 +17,9 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         uIManager.pulseManager.stresse = joueur.peur / 100;
+
+        if (joueur.peur >= 99){
+            uIManager.GameOver();
+        }
     }
 }

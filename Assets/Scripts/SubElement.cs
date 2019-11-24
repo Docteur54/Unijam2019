@@ -6,6 +6,7 @@ public class SubElement : MonoBehaviour
 {
     public bool instacie;
     public GameObject piege;
+    public GameObject joueur;
     public float peur = 0f;
     public float vitesse = 0f;
     public AudioSource sound;

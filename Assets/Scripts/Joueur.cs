@@ -31,7 +31,7 @@ public class Joueur : MonoBehaviour
         vitesseDesiree -= coefDecroissancePassive * Time.deltaTime * vitesseDesiree;
         if (vitesseDesiree < 0.5) vitesseDesiree = 0;
         vitesseActuelle += (vitesseDesiree - vitesseActuelle) * coefReactivite * Time.deltaTime;
-        Debug.Log(vitesseActuelle);
+        //Debug.Log(vitesseActuelle);
 
         peur -= 5 * Time.deltaTime;
 
@@ -55,7 +55,7 @@ public class Joueur : MonoBehaviour
             peur = 0;
         }
 
-        Debug.Log(vitesseActuelle);
+        //Debug.Log(vitesseActuelle);
     }
 
     public void Deplacement(){

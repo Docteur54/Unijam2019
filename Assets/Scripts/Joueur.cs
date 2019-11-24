@@ -45,8 +45,8 @@ public class Joueur : MonoBehaviour
         // Si le perso va trop lentement, il s'arrête
         if(vitesseActuelle < 0.4 && vitesseDesiree < vitesseActuelle){
             vitesseActuelle = 0;
-            monstre.transform.SetPositionAndRotation(new Vector3(transform.position.x - 10, 0, -2), Quaternion.identity);
-            monstre.Vitesse = 7;
+            monstre.transform.SetPositionAndRotation(new Vector3(transform.position.x - 11.606f, 1.997f, -2), Quaternion.identity);
+            monstre.Vitesse = 3;
             print("monstre arrive ! " + monstre.Vitesse);
         }
 

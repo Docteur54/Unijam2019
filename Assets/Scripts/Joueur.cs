@@ -117,7 +117,7 @@ public class Joueur : MonoBehaviour
     {
         animator.SetBool("Trebuche", false);
         animator.SetBool("Surprise", false);
-        animator.SetBool("Mort", false);
+        
     }
 
 }

@@ -1,15 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/animation/Personnage/Mort.anim.meta
-guid: b63bc13ccd45154468eddd27027956ce
+guid: 47d1d5c798121b34fa079cbf4eb599d3
 NativeFormatImporter:
   externalObjects: {}
-  mainObjectFileID: 7400000
-=======
-guid: ade482b779e0d79478d0e8a2606a172c
-NativeFormatImporter:
-  externalObjects: {}
-  mainObjectFileID: 9100000
->>>>>>> 5e1649022f01e42422ec6b9a9f40004bb6b981e1:Assets/animation/Anim_clock2_0.controller.meta
+  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

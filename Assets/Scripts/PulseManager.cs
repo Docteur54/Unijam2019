@@ -28,6 +28,8 @@ public class PulseManager : MonoBehaviour
     float valeurInLaunch;
     float time;
 
+    public AudioSource sound;
+
     private float _factor;
 
     public float factor
@@ -54,6 +56,7 @@ public class PulseManager : MonoBehaviour
             amplitude = stresse * (amplitudeMAX - amplitudeMIN) + amplitudeMIN;
             defaultPosition = new Vector2((stresse) * (defaultPositionMAX.x - defaultPositionMIN.x) + defaultPositionMIN.x, (stresse) * (defaultPositionMAX.y - defaultPositionMIN.y) + defaultPositionMIN.y);
             frequence = stresse * (frequenceMAX - frequenceMIN) + frequenceMIN;
+            sound.Play();
         }
 
         if (time > 1/frequence) canLaunch = true;

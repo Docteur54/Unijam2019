@@ -20,6 +20,7 @@ public class Joueur : MonoBehaviour
     public float coefDecroissancePassive = 0.25f, coefReactivite = 0.5f;
     public float seuilVitesseArret = 0.2f;
 
+    public bool Mort;
 
     // Start is called before the first frame update
     void Start()
@@ -55,14 +56,18 @@ public class Joueur : MonoBehaviour
 
         Deplacement();
 
-        if(peur >= 100){
-            // Game Over
+        
+
+        if (peur >= 100){
+         
         }
+
         if(peur < 0){
             peur = 0;
         }
 
         animator.SetFloat("Speed", vitesseActuelle);
+
         if (vitesseActuelle > 4) animator.speed = (vitesseActuelle - 4) / 4 + 1;
         else if (vitesseActuelle > 0.3) animator.speed = (vitesseActuelle - 0.4f) / 6.6f + 0.5f;
         else animator.speed = 1;
@@ -72,6 +77,11 @@ public class Joueur : MonoBehaviour
 
     public void Deplacement(){
         transform.position += new Vector3(vitesseActuelle * Time.deltaTime, 0, 0);
+    }
+
+    public void Dead()
+    {
+        animator.SetBool("Fin", true);
     }
 
     // ***************************************
@@ -105,7 +115,8 @@ public class Joueur : MonoBehaviour
     private void LateUpdate()
     {
         animator.SetBool("Trebuche", false);
-        animator.SetBool("Surprise", false);    
+        animator.SetBool("Surprise", false);
+        animator.SetBool("Mort", false);
     }
 
 }

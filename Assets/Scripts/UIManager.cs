@@ -61,6 +61,7 @@ public class UIManager : MonoBehaviour
     public void GameOver(){
         //print("GameOver");
         //Time.timeScale = 0f;
+
         gameOverMenu.SetActive(true);
         btnPause.gameObject.SetActive(false);
     }

@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
 
         if (joueur.peur >= 99){
             uIManager.GameOver();
+            joueur.Dead();
+            joueur.vitesseActuelle = 0;
+            joueur.vitesseDesiree = 0;
+            joueur.peur = 102;
         }
     }
 }

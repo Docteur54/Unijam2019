@@ -97,7 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instacie: 0
   piege: {fileID: 0}
-  joueur: {fileID: 0}
   peur: 0
   vitesse: 0
   sound: {fileID: 0}
@@ -292,7 +291,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   instacie: 0
   piege: {fileID: 0}
-  joueur: {fileID: 0}
   peur: 0
   vitesse: 0
   sound: {fileID: 2920830560686880817}
@@ -307,8 +305,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dc4156f962b9c174085e755f6fa2e17c, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.6
+  m_PlayOnAwake: 1
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -292,7 +292,7 @@ MonoBehaviour:
   instacie: 0
   piege: {fileID: 0}
   peur: 20
-  vitesse: 1
+  vitesse: 2
   sound: {fileID: 2920830560686880817}
 --- !u!82 &2920830560686880817
 AudioSource:

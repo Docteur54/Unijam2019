@@ -30,6 +30,7 @@ public class PulseManager : MonoBehaviour
     float time;
 
     public AudioSource sound;
+    public Joueur joueur;
 
     private float _factor;
 
@@ -57,7 +58,7 @@ public class PulseManager : MonoBehaviour
             amplitude = stresse * (amplitudeMAX - amplitudeMIN) + amplitudeMIN;
             defaultPosition = new Vector2((stresse) * (defaultPositionMAX.x - defaultPositionMIN.x) + defaultPositionMIN.x, (stresse) * (defaultPositionMAX.y - defaultPositionMIN.y) + defaultPositionMIN.y);
             frequence = stresse * (frequenceMAX - frequenceMIN) + frequenceMIN;
-            canBeat = true;
+            canBeat = true && !joueur.Mort;
         }
         if (canBeat && !sound.isPlaying)
         {

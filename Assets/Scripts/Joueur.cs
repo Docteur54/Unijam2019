@@ -83,6 +83,7 @@ public class Joueur : MonoBehaviour
     public void Dead()
     {
         animator.SetBool("Fin", true);
+        Mort = true;
     }
 
     // ***************************************

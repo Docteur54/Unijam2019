@@ -36,6 +36,7 @@ public class Joueur : MonoBehaviour
         // Faire décroitre la vitesse au fil du temps
         vitesseDesiree -= coefDecroissancePassive * Time.deltaTime * vitesseDesiree;
         if (vitesseDesiree < 0.5) vitesseDesiree = 0;
+        if (vitesseActuelle < 0) vitesseActuelle = 0.01f;
         vitesseActuelle += (vitesseDesiree - vitesseActuelle) * coefReactivite * Time.deltaTime;
         //Debug.Log(vitesseActuelle);
 
@@ -108,7 +109,7 @@ public class Joueur : MonoBehaviour
         animator.SetBool("Trebuche",true);
         Debug.Log("lol");
         vitesseDesiree -= variationVitesse;
-        vitesseActuelle = vitesseDesiree;
+        vitesseActuelle = vitesseDesiree + 0.01f;
         peur += variationPeur;
     }
 
